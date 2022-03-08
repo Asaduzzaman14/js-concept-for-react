@@ -31,4 +31,28 @@ const value = Object.values(student)
 // console.log(value);
 
 
-// for
+// for of on array like object
+//  loop on an object using for in
+
+
+//  add or remove form an array
+const products = [
+    { name: 'laptop', price: '23499', brand: 'len', color: 'silver' },
+    { name: 'phone', price: '3000', brand: 'HTC', color: 'blue' },
+    { name: 'watch', price: '3000', brand: 'samsung', color: 'black' },
+    { name: 'Camera', price: '6000', brand: 'Canon', color: 'black red' },
+    { name: 'mug', price: '900', brand: 'galss', color: 'water' },
+]
+
+const newProduct = { name: 'webcam', price: 7000, brand: 'no brand' }
+
+//  copy products and then add new product
+
+const newProducts = [...products, newProduct]
+
+
+// create a new array without one specific item
+// remove phone means create a new array without the phone
+const remaining = products.filter(p => p.name !== 'phone')
+
+
